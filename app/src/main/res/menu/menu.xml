@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group>
+        <item
+            android:title="Home"
+            android:icon="@drawable/baseline_home_24"
+            android:id="@+id/home_nav_menu"/>
+        <item
+            android:title="Organization"
+            android:icon="@drawable/baseline_business_24"
+            android:id="@+id/organization_nav_menu"/>
+        <item
+            android:title="Panel"
+            android:icon="@drawable/baseline_business_center_24"
+            android:id="@+id/panel_nav_menu"/>
+        <item
+            android:title="Events"
+            android:icon="@drawable/baseline_event_24"
+            android:id="@+id/events_nav_menu"/>
+        <item
+            android:title="Seniority"
+            android:icon="@drawable/baseline_elderly_woman_24"
+            android:id="@+id/seniority_nav_menu"/>
+        <item
+            android:title="Circulars"
+            android:icon="@drawable/baseline_blur_circular_24"
+            android:id="@+id/circulars_nav_menu"/>
+        <item
+            android:title="News"
+            android:icon="@drawable/baseline_create_new_folder_24"
+            android:id="@+id/news_nav_menu"/>
+        <item
+            android:title="IRPOBF"
+            android:icon="@drawable/baseline_delivery_dining_24"
+            android:id="@+id/irpobf_nav_menu"/>
+        <item
+            android:title="Download PDF"
+            android:icon="@drawable/baseline_cloud_download_24"
+            android:id="@+id/download_nav_menu"/>
+
+    </group>
+
+</menu>

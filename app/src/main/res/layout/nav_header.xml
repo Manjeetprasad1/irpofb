@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/irpofb_logo"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="@dimen/global_spacing_60"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textColor="@color/brand_color"
+        android:layout_marginStart="@dimen/global_spacing_32"
+        android:textSize="@dimen/global_text_size_display_18"
+        android:layout_marginBottom="@dimen/global_spacing_32"
+        android:layout_marginTop="@dimen/global_spacing_4"/>
+
+
+
+</LinearLayout>

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/global_text_size_display_32">
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/viewPagerMain"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/global_spacing_250"/>
+
+            <TextView
+                android:id="@+id/tv_hand_ine"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:layout_below="@+id/viewPagerMain"
+                android:background="@color/blue"
+                android:gravity="center"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:singleLine="true"
+                android:ellipsize="marquee"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:paddingHorizontal="@dimen/global_spacing_16"
+                android:text="@string/long_text"
+                android:paddingVertical="@dimen/global_spacing_16"
+                android:textSize="@dimen/global_text_size_14"
+                />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_post_categories"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/global_spacing_16"
+                android:layout_marginTop="@dimen/global_spacing_16"
+                android:layout_below="@+id/tv_hand_ine"
+                />
+
+            <RelativeLayout
+                android:id="@+id/layout_one"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                android:layout_below="@+id/rv_post_categories">
+                <TextView
+                    android:id="@+id/tv_news_heading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/indian_railway_heading"
+                    android:gravity="center"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/blue"
+                    android:layout_marginHorizontal="@dimen/global_spacing_2"
+                    android:paddingHorizontal="@dimen/global_spacing_32"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:paddingVertical="@dimen/global_spacing_16"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/global_text_size_display_32"/>
+
+                <TextView
+                    android:id="@+id/tv_news_sub_heading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/indian_railway_sub_heading"
+                    android:gravity="center"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/tv_news_heading"
+                    android:textColor="@color/black_text_color"
+                    android:layout_marginHorizontal="@dimen/global_spacing_2"
+                    android:paddingHorizontal="@dimen/global_spacing_32"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:textSize="@dimen/global_text_size_14"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_two"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_below="@+id/rv_post_categories">
+                <TextView
+                    android:id="@+id/tv_mission_news_heading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/our_mission"
+                    android:gravity="center"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/blue"
+                    android:layout_marginHorizontal="@dimen/global_spacing_2"
+                    android:paddingHorizontal="@dimen/global_spacing_32"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:paddingVertical="@dimen/global_spacing_16"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/global_text_size_display_32"/>
+
+                <TextView
+                    android:id="@+id/tv_mission_news_sub_heading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/indian_railway_heading_mission"
+                    android:gravity="center"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/tv_mission_news_heading"
+                    android:textColor="@color/black_text_color"
+                    android:layout_marginHorizontal="@dimen/global_spacing_2"
+                    android:paddingHorizontal="@dimen/global_spacing_32"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:textSize="@dimen/global_text_size_14"/>
+
+                <TextView
+                    android:id="@+id/tv_vision_news_heading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/our_vision"
+                    android:gravity="center"
+                    android:layout_below="@+id/tv_mission_news_sub_heading"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/blue"
+                    android:layout_marginHorizontal="@dimen/global_spacing_2"
+                    android:paddingHorizontal="@dimen/global_spacing_32"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:paddingVertical="@dimen/global_spacing_16"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/global_text_size_display_32"/>
+
+                <TextView
+                    android:id="@+id/tv_vision_news_sub_heading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/indian_railway_heading_vision"
+                    android:gravity="center"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/tv_vision_news_heading"
+                    android:textColor="@color/black_text_color"
+                    android:layout_marginHorizontal="@dimen/global_spacing_2"
+                    android:paddingHorizontal="@dimen/global_spacing_32"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:textSize="@dimen/global_text_size_14"/>
+
+            </RelativeLayout>
+
+
+
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
